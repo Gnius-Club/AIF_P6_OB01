@@ -1,24 +1,188 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Intro Sesión 1: ¡Bienvenidos al Futuro!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🚀</span> <strong>Playbook Intro Sesión 1: ¡Bienvenidos al Futuro!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+             <div class="sidebar-info">
+                <p>💡 Esta sesión es la bienvenida cultural y logística a Gnius. El objetivo es inspirar y completar los perfiles de aprendizaje.</p>
+                <p>⏱️ Siga los tiempos para asegurar que todos los alumnos completen la configuración inicial y sus perfiles Pathfinder.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Nuestra Misión: ¡Crear con Tecnología! ⏰ 8 minutos</h2>
+                <p>Bienvenida e inspiración. Presentar la filosofía Gnius a través de un video y una breve discusión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción ⏰ 3 minutos</h3>
+                            <p>Da una bienvenida energética y presenta el objetivo del programa: no solo usar tecnología, sino crearla para resolver problemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, futuros arquitectos de la tecnología! Bienvenidos a Gnius Club. Este año, vamos a emprender una aventura épica. No vamos a aprender solo a usar computadoras o robots. Vamos a aprender a ser los directores, los creadores, los que usan la tecnología para construir soluciones increíbles. ¿Alguna vez han tenido una idea fantástica para un juego, una app o un robot? Aquí, vamos a darles las herramientas para que esas ideas se hagan realidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Video Motivacional "Cambiar el Mundo" ⏰ 5 minutos</h3>
+                            <p>Proyecta el video motivacional de Gnius. Después, facilita una breve discusión sobre las impresiones de los alumnos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Antes del video) Para empezar, quiero que vean algo que resume nuestra misión. Presten mucha atención. (Proyectar video). <br> (Después del video) ¡Impresionante, verdad? ¿Qué les pareció? ¿Qué idea les llamó más la atención? (Da espacio para 2-3 comentarios). Exacto. La tecnología es poderosa, y ustedes van a aprender a dirigir ese poder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Tu Pasaporte a Gnius y tu Copiloto IA Xolo ⏰ 10 minutos</h2>
+                <p>Logística de acceso y primera interacción con el asistente de IA Xolo.</p>
+                <div class="steps">
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Entrega de Credenciales y Login ⏰ 5 minutos</h3>
+                            <p>Reparte las credenciales y proyecta el video tutorial de Gnius para el primer inicio de sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ahora recibirán su 'pasaporte' oficial a Gnius: sus credenciales de acceso. Esta tarjeta contiene su usuario y contraseña únicos. Es información privada, ¡así que trátenla como un tesoro! Ahora proyectaré un video corto que les mostrará cómo ingresar. Sigan los pasos y si alguien tiene problemas, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conociendo y "Entrenando" a Xolo ⏰ 5 minutos</h3>
+                            <p>Presenta a Xolo y guía a los alumnos para su primera interacción, ingresando sus gustos e intereses.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Dentro de la plataforma conocerán a su copiloto, un asistente experto llamado Xolo. Xolo es una Inteligencia Artificial, no es una persona, pero está diseñado para ayudarles a crear. Para que les ayude mejor, necesita conocerlos. Abran el chat y preséntense con su nombre y sus gustos. Por ejemplo: 'Hola Xolo, soy Luis y mis gustos son el fútbol y los videojuegos'. ¡Adelante!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Pathfinder: ¿Quién Eres, Creador? ⏰ 15 minutos</h2>
+                <p>Los alumnos completan sus perfiles de aprendizaje para personalizar la experiencia Gnius.</p>
+                 <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Explicación de los Perfiles ⏰ 3 minutos</h3>
+                            <p>Explica brevemente la finalidad de los tests 'Learning Profile' y 'Hexad'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora vamos a la sección 'Pathfinder'. Realizaremos dos breves tests para descubrir su perfil. No son exámenes, no hay respuestas incorrectas. Son para que Xolo entienda si aprenden mejor viendo, escuchando o haciendo, y qué es lo que más les motiva. Esto es fundamental para que su experiencia sea única.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Realización de los Tests ⏰ 12 minutos</h3>
+                            <p>Da tiempo a los alumnos para que completen ambos cuestionarios en la plataforma. Monitorea y da apoyo.</p>
+                        </div>
+                         <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Tómense su tiempo, lean con calma y respondan con honestidad. Levanten la mano si necesitan ayuda. El objetivo es que todos completen su perfil para que estemos listos para las próximas misiones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Cierre: Las Reglas del Juego ⏰ 7 minutos</h2>
+                <p>Explicar los sistemas de recompensa (Mon-e) y de responsabilidad (Ciudadanía Digital).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Explicación del Sistema Mon-e ⏰ 3 minutos</h3>
+                            <p>Detalla el sistema de gamificación Gnius Mon-e y la regla de bloqueo crucial.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">En Gnius, ¡aprender tiene su recompensa! Con cada misión completada, ganarán una moneda virtual llamada 'Gnius Mon-e' (+5 por misión de tech, +10 por CD). Podrán canjearla por recompensas como tiempo en la impresora 3D. Pero atención a la regla más importante: <strong>No puedes canjear NINGÚN Mon-e si tienes misiones de Ciudadanía Digital pendientes.</strong> ¡Primero la responsabilidad!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Explicación de Ciudadanía Digital (CD) ⏰ 4 minutos</h3>
+                            <p>Explica qué son las misiones de Ciudadanía Digital, usando el diálogo que corresponda a la modalidad de tu colegio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo para Modalidad 1 Hora (en casa)</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Las misiones de Ciudadanía Digital son su entrenamiento para ser héroes digitales. En nuestro colegio, estas misiones se realizan <strong>de forma individual en casa.</strong> Durarán unos 20-25 minutos e interactuarán con el asistente IA <strong>ADA</strong> para resolver casos y reflexionar sobre la vida digital. Son clave para su formación y para desbloquear sus Mon-e.</p>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo para Modalidad 2 Horas (presencial)</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Las misiones de Ciudadanía Digital son nuestro entrenamiento en equipo para ser héroes digitales. En nuestro colegio, se realizan <strong>de forma presencial aquí en el aula.</strong> La sesión incluirá activación, una "Conexión con ADA" (el asistente de IA para CD), y retos prácticos. Son clave para su formación y para desbloquear sus Mon-e.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
